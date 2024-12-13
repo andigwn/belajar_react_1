@@ -1,11 +1,12 @@
+// parent component
 import React from "react";
+import Testing from "./components/testing";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Testing />
+    </>
   )
 }
-
 export default App;
