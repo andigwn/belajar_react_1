@@ -1,25 +1,17 @@
 // parent component
-import React, { useEffect, useState } from "react";
-import Testing from "./components/testing";
+import React from "react";
+import MainLayout from "./components/Layouts/main.layout";
+
+
+
+
 
 const App = () => {
-  const [getLimit, setLimit] = useState(0);
-  const [getMyName, setMyName] = useState('Andi');
 
-  useEffect(() => {
-    console.log('render ketika browser di buka');
-  }, [])
   return (
-    <>
-      <center>
-        {getLimit} <br />
-        <button onClick={() => setLimit((prev) => prev + 1)}>tambah</button>
-        <br />
-        {getLimit > 0 && <button onClick={() => setLimit(0)}>reset</button>}
-        {getLimit > 0 && <button onClick={() => setLimit((prev) => prev - 1)}>kurang</button>}
-      </center>
-      <Testing />
-    </>
+    <MainLayout>
+      <h1>Navigation</h1>
+    </MainLayout>
   )
 }
 export default App;

@@ -1,11 +1,12 @@
 // children component
 
 import React from 'react';
-const Testing = () => {
+const Testing = (props) => {
+    const { title, description } = props
     return (
         <React.Fragment>
-            <h1>Testing</h1>
-            <p>Hello Testing</p>
+            <h1>{title}</h1>
+            <p>{description}</p>
         </React.Fragment>
     )
 }
